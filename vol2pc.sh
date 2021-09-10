@@ -71,7 +71,7 @@ echo Done!
 # with System.map from local /boot directory.
 make -f ${TOOLDIR}/volatility/Makefile -C ${TOOLDIR}/volatility/ clean dwarf
 
-# Profile ends up in $CAPTUREDIR with memory image
+# Profile ends up in $TARGETDIR
 zip ${TARGETDIR}/${HOST}-${TIMESTAMP}-profile.zip ${TOOLDIR}/volatility/module.dwarf /boot/System.map-$KVER
 
 # Clean up
